@@ -3,9 +3,9 @@ def print_transactions(transactions):
 
         if type(element) is float or int:
             if element >= 0:
-                print(f'You received {element}')
+                print(f'You received {element} euros')
             else:
-                print(f'You spend {element}')
+                print(f'You spend {abs(element)} euros')
         else:
             print('Error, not number of float')
 
@@ -18,9 +18,9 @@ def print_sorted_transactions(transactions):
 
         if type(element) is float or int:
             if element >= 0:
-                print(f'You received {element}')
+                print(f'You received {element} euros')
             else:
-                print(f'You spend {element}')
+                print(f'You spend {abs(element)} euros')
         else:
             print('Error, not number of float')
 
