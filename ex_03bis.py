@@ -67,7 +67,7 @@ class Budget():
 
         newData = json.dumps(datatoadd, indent=4)
 
-        with open('newdata.json', 'a') as file:
+        with open('data.json', 'w') as file:
             # write
             file.write(newData)
 
@@ -77,4 +77,4 @@ if __name__ == '__main__':
     # myBudget.get_categories()
     myBudget.print_transactions()
     #myBudget.print_sorted_transactions('income')
-    #myBudget.add_transactions([-12, -102.13], "corn for poney")
+    myBudget.add_transactions([-12, -102.13], "corn for poney")
